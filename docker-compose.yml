@@ -1,0 +1,13 @@
+version: '3'
+services:
+  emailnotesobsidian:
+    build: .
+    restart: always
+    env_file:
+     - .env
+    volumes:
+     - yd-data:/yd-data
+
+volumes:
+  yd-data:
+    external: true
