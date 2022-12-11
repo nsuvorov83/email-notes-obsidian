@@ -36,7 +36,6 @@ def writer(folder_to_save, date, time, tags = [], note_name = "", note_text = ""
         f.write(f'created_at: "{date} {time}"\n')
         f.write("---\n")
         f.write("\n\n")
-        f.write(f"# {note_name}\n")
         f.write(note_text+"\n\n")
         
         #Writting attachments
